@@ -50,3 +50,48 @@
   border: 1px solid #ddd;
   border-radius: 8px;
 }
+/* Container for the search filter */
+.search-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Style for the input text */
+.search-filter input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the dropdown selectors */
+.search-filter select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #040303;
+  appearance: none; /* Removes default browser styling */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Add hover effect to the dropdown selectors */
+.search-filter select:hover {
+  border-color: #007bff;
+}
+
+/* Add a focus effect for dropdowns */
+.search-filter select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

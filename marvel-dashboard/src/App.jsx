@@ -12,6 +12,7 @@ function App() {
   const [filteredBreweries, setFilteredBreweries] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [randomBrewery, setRandomBrewery] = useState(null);
+  const [filters, setFilters] = useState({ type: '', state: '' });
 
   useEffect(() => {
     async function fetchBreweries() {
@@ -38,17 +39,34 @@ function App() {
 
   useEffect(() => {
     if (breweries.length > 0) {
-      const filtered = breweries.filter((brewery) =>
-        brewery.name.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+      const filtered = breweries.filter((brewery) => {
+        // Search by name, city, or state
+        const matchesSearch = brewery.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                              brewery.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                              brewery.state.toLowerCase().includes(searchTerm.toLowerCase());
+
+        // Filter by brewery type
+        const matchesType = filters.type ? brewery.brewery_type === filters.type : true;
+
+        // Filter by state
+        const matchesState = filters.state ? brewery.state === filters.state : true;
+
+        return matchesSearch && matchesType && matchesState;
+      });
       setFilteredBreweries(filtered);
     }
-  }, [searchTerm, breweries]);
+  }, [searchTerm, breweries, filters]);
 
   return (
     <div className="container">
       <h1>Brewery Dashboard</h1>
-      <SearchFilter searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <SearchFilter 
+      className="search-filter"
+        searchTerm={searchTerm} 
+        setSearchTerm={setSearchTerm} 
+        filters={filters} 
+        setFilters={setFilters} 
+      />
       <button onClick={fetchRandomBrewery}>Get Random Brewery</button>
       {randomBrewery && (
         <div className="random-brewery">
