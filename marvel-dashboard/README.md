@@ -1,10 +1,10 @@
-# Web Development Project 5 - *Weather Dashboard*
+# Web Development Project 5 - *Brewery Dashboard*
 
 Submitted by: **sheikh shihabun sakib**
 
 This web app: **A Brewery Dashboard app that displays information about breweries, allows users to search and filter breweries, and fetches a random brewery upon request.**
 
-Time spent: **7** hours spent in total
+Time spent: **9** hours spent in total
 
 ## Required Features
 
@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/GikF4U4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/OGJO4Kd.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  [ScreenToGif](https://www.screentogif.com/)
@@ -46,6 +46,7 @@ GIF created with ...  [ScreenToGif](https://www.screentogif.com/)
 ## Notes
 
 Describe any challenges encountered while building the app.
+-api limitations, had to startover 2 times. 
 
 ## License
 
