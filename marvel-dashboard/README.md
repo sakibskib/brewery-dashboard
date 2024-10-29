@@ -4,37 +4,41 @@ Submitted by: **sheikh shihabun sakib**
 
 This web app: **A Brewery Dashboard app that displays information about breweries, allows users to search and filter breweries, and fetches a random brewery upon request.**
 
-Time spent: **9** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [x] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [x] *The SummaryStats component calculates three summary statistics:
-            -Total Breweries.
-            -State with the Most Breweries.
-            -Most Common Brewery Type.*
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [x] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+  - [x] To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording.
+- [x]**Clicking on an item has a direct, unique link to that item's detail view page**
+  - [x] To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording.  
+
 
 The following **optional** features are implemented:
 
-- [x] Multiple filters can be applied simultaneously
-- [x] Filters use different input types such as a text input, a selection, or a slider
-- [x] The user can enter specific bounds for filter values
+- [x] The site's customized dashboard contains more content that explains what is interesting about the data
+- [ ] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [x] List anything else that you added to improve the site's functionality!
+- Detailed Brewery Information View:
+
+    Each brewery in the list links to a dedicated detail page, which displays detailed information about the selected brewery.
+
+    The detail view is accessible via unique URLs for easy sharing, thanks to React Router integration.
+
+- A dynamic bar chart shows the distribution of brewery types based on the current list, giving users insights into the types of breweries available.
+- The chart updates in real-time as users apply filters, enhancing the storytelling aspect of the data.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/OGJO4Kd.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/rIe6jAv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  [ScreenToGif](https://www.screentogif.com/)
@@ -46,7 +50,6 @@ GIF created with ...  [ScreenToGif](https://www.screentogif.com/)
 ## Notes
 
 Describe any challenges encountered while building the app.
--api limitations, had to startover 2 times. 
 
 ## License
 
