@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BreweryList = ({ data }) => {
   return (
@@ -7,7 +8,9 @@ const BreweryList = ({ data }) => {
       <ul>
         {data.map((brewery) => (
           <li key={brewery.id}>
-            <strong>{brewery.name}</strong> - {brewery.city}, {brewery.state}
+            <Link to={`/brewery/${brewery.id}`}>
+              <strong>{brewery.name}</strong> - {brewery.city}, {brewery.state}
+            </Link>
           </li>
         ))}
       </ul>

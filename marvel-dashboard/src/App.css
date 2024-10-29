@@ -95,3 +95,20 @@
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+.brewery-detail {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #17739d;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brewery-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.brewery-list a:hover {
+  text-decoration: underline;
+}
+
